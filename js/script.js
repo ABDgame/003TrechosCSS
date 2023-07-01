@@ -12,5 +12,13 @@ $(document).ready(function(){
     }
     
   });
+  $('.gallery').magnificPopup({
+    delegate:'a',
+    type:'img',
+    gallery:{
+      enabled:true
+    }
+    
+  });
   
 });
