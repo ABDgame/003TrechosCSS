@@ -38,3 +38,29 @@
    background: coral;
    color:#fff;
 }
+
+.gallery .image-container{
+   display:flex;
+   align-items:center;
+   justify-content: center;
+   flex-wrap:wrap;
+}
+
+.gallery .image-container .image{
+   height:250px;
+   width:350px;
+   overflow:hidden;
+   border:15px solid #fff;
+   box-shadow:0 3px 5px rgba(0,0,0,.3);
+   margin:20px;
+}
+
+.gallery .image-container .image img{
+   height: 100%;
+   width:100%;
+   object-fit: cover;
+}
+
+.gallery .image-container .image:hover img{
+   transform: scale(1.4);
+}
