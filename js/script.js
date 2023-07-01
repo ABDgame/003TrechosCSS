@@ -8,7 +8,9 @@ $(document).ready(function(){
        $('.img').show(400);
     }else{
       $('.img').not('.'+filter).hide(200);
-      $('.img').filte('.'+filter).show(200);
+      $('.img').filte('.'+filter).show(400);
     }
-  })
-}};
+    
+  });
+  
+});
