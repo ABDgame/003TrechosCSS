@@ -46,7 +46,7 @@
    flex-wrap:wrap;
 }
 
-.gallery .image-container .image{
+.gallery .image-container .img{
    height:250px;
    width:350px;
    overflow:hidden;
