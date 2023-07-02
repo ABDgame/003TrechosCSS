@@ -87,12 +87,41 @@
 
   </div>
 
- <script src="js/script.js"></script>
+ 
   <!-- jquery cdn link -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- magnific popup js cdn link -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $('.buttons').click(function(){
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        var filter = $(this).attr('data-filter')
+
+        if(filter == 'all'){
+            $('.img').show(400);
+       }else{
+            $('.img').not('.'+filter).hide(200);
+            $('.img').filter('.'+filter).show(400);
+       }
+
+    });
+    $('.gallery').magnificPopup({
+      delegate:'a',
+      type:'img',
+      gallery:{
+       enabled:true
+    }
+
+  });
+  
+});
+  </script>
        
  </body> 
  </html>
